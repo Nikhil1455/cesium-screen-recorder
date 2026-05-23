@@ -1,0 +1,30 @@
+# Screen Recorder Configuration
+# Optimized for Intel Broadwell (i5-5300U) with Intel HD 5500
+
+# Output resolution
+width 1920
+height 1080
+
+# Frame rate (30 or 60)
+fps 30
+
+# Bitrate in kbps (4000 = 4 Mbps)
+# Higher = better quality, larger files
+bitrate 4000
+
+# Encoder: qsv (Intel Quick Sync), x264 (software), or auto
+# QSV is strongly recommended for dual-core CPUs
+encoder qsv
+
+# H.264 profile: baseline or main
+profile main
+
+# Output file path (timestamp will be appended)
+output recording.mp4
+
+# Monitor index for multi-monitor setups (0 = primary)
+monitor 0
+
+# Force GDI capture (for Windows 7 or troubleshooting)
+# Set to true only if DXGI fails
+use_gdi false
